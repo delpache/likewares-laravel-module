@@ -1,0 +1,41 @@
+{
+    "name": "likewares/laravel-module",
+    "description": "Gestion de module pour Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "KOUAOBILE ASSANDE HUGUES",
+            "email": "assandehugues@gmail.com",
+            "homepage": "https://crm.likewares.com",
+            "role": "CEO Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0|^8.1|^8.2|^8.3|^8.4"
+    },
+    "require-dev": {
+        "laravel/framework": "^9.0|^10.0|^11.0|^12.0",
+        "orchestra/testbench": "^7.4|^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^9.5|^10.0|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Likewares\\Module\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Likewares\\Module\\Providers\\Laravel"
+            ],
+            "aliases": {
+                "Module": "Likewares\\Module\\Facade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
